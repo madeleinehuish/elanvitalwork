@@ -1,0 +1,52 @@
+/*-------------- NAVIGATION -------------*/
+header {
+  height: 70px;
+  background-color: #7e6768;
+}
+
+header > div.container {
+  width: 100%;
+  margin: 0;
+}
+
+header > div.twelve.columns, nav.six.columns {
+  height: 50px;
+}
+
+#titleWord {
+  margin-top: 15px;
+}
+
+nav.six.columns > ul {
+  display: flex;
+  float: right;
+  margin-top: 13px;
+  width: 64%;
+  height: 50px;
+}
+
+nav.six.columns > ul > li {
+  text-transform: lowercase;
+}
+
+nav.six.columns > ul > li:first-letter {
+  text-transform: uppercase;
+}
+
+nav.six.columns > ul > li {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+li {
+  list-style: none;
+  margin-top: 10px;
+  color: #e5e5e5;
+  font-family: helvetica;
+  font-weight: lighter;
+}
+h5 {
+  margin-left: 30px;
+  color: #e5e5e5;
+  font-family: helvetica;
+}
