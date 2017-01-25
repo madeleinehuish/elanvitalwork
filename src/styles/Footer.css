@@ -1,0 +1,32 @@
+footer {
+	color: #e5e5e5;
+  font-family: helvetica;
+}
+
+#upperFooter {
+	background-color: #7e6768;
+	height: 180px;
+}
+
+#footerTopText {
+	/*margin-left: 0%;*/
+	text-align: left;
+}
+
+p {
+	font-size: 60%;
+	line-height: 2%;
+	margin-bottom: 1.7rem;
+	margin-left: 30px;
+	text-align: left;
+}
+
+#lowerFooter {
+	height: 50px;
+	background-color: #3f3334;
+}
+
+#lowerFooter > p {
+	margin-top: 20px;
+	font-size: 90%;
+}
