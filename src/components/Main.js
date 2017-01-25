@@ -11,6 +11,7 @@ class Main extends React.Component {
 
   scrollEvent(e) {
     const height = window.pageYOffset;
+    console.log(height);
     const firstPic = ReactDOM.findDOMNode(this.refs.firstPic);
     const secondPic = ReactDOM.findDOMNode(this.refs.secondPic);
     const thirdPic = ReactDOM.findDOMNode(this.refs.thirdPic);
@@ -19,6 +20,12 @@ class Main extends React.Component {
       firstPic.classList.add('back-opacity');
     } else if (height < 200 && firstPic.classList.value.indexOf('back-opacity')  > 0) {
       firstPic.classList.remove('back-opacity');
+    }
+
+    if (height > 1000 && secondPic.classList.value.indexOf('back-opacity')  < 0) {
+      secondPic.classList.add('back-opacity');
+    } else if (height < 1000 && secondPic.classList.value.indexOf('back-opacity')  > 0) {
+      secondPic.classList.remove('back-opacity');
     }
   }
 
