@@ -1,18 +1,49 @@
 /*---------- HERO ----------*/
-#hero {
+.background {
   width: 100%;
-  height: 500px;
-  padding: 100px 0;
+  height: 35rem;
+  padding: 5rem 0;
   text-align: center;
+}
+
+.background-one {
   color: white;
-  background: url(../assets/images/IMG_4570.JPG) no-repeat bottom center scroll;
+  background: url('../assets/images/IMG_4570.JPG') no-repeat bottom center scroll;
+}
+
+.background-one > h1 {
+  font-size: 6rem;
+}
+
+.background-two {
+  background: url('../assets/images/IMG_4571.JPG') no-repeat bottom center scroll;
+}
+
+.background-three {
+  background: url('../assets/images/IMG_4572.JPG') no-repeat bottom center scroll;
+}
+
+.back {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
+  transition: opacity 0.5s ease;
 }
 
-#hero > h1 {
-  font-family: 'Helvetica';
-  font-size: 8em;
+.back-opacity {
+  opacity: 0.3;
+  transition: opacity 1s ease;
+}
+
+.section {
+  height: 25rem;
+  padding: 2.5rem 0;
+  color: #222;
+  text-align: center;
+}
+
+.second-section {
+  height: 40rem;
 }
