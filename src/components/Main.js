@@ -11,7 +11,6 @@ class Main extends React.Component {
 
   scrollEvent(e) {
     const height = window.pageYOffset;
-    console.log(height);
     const firstPic = ReactDOM.findDOMNode(this.refs.firstPic);
     const secondPic = ReactDOM.findDOMNode(this.refs.secondPic);
     const thirdPic = ReactDOM.findDOMNode(this.refs.thirdPic);
