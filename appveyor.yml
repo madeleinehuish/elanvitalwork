@@ -1,0 +1,52 @@
+# Test against this version of Node.js
+environment:
+  nodejs_version: "6.9.3"
+
+# Install scripts. (runs after repo cloning)
+install:
+  # Get the latest stable version of Node.js or io.js
+  - ps: Install-Product node $env:nodejs_version
+  - npm install
+  # Output useful info for debugging.
+  - node --version
+  - npm --version
+
+build_script:
+  - npm run build
+  - dir /b C:\projects\elan-vital-public-site
+  - dir /b C:\projects\elan-vital-public-site\build
+
+# Commenting out tests for now (they run interactive?)
+#test_script:
+#  - npm test
+
+# Turn off test scripts
+#test: off
+
+
+# Cache folder to speed up builds
+cache:
+  - node_modules # preserve "node_modules" directory in the root of build folder
+  #- node_modules -> package.json # preserve "node_modules" directory in the root of build folder but will reset it if package.json is modified
+  - cache   # nw-builder cache
+  - '%APPDATA%\npm-cache'   # npm cache
+
+# notifications:
+#   - provider: Slack
+#     incoming_webhook:
+#       secure: 2k8ux1fHMqO1dHMzpzn0vKwSOYYUH6xRje3cZgfAsbKJPV3QMRaiu2m7lVmruVzWwaP5Qc3jzu+2OzTGigMUrIcPwhUw1YBH+Ce7dj6FFvE=
+
+artifacts:
+  - path: build
+    name: elan-vital-public-site
+
+deploy:
+  - provider: WebDeploy
+    server: https://elan-vital-public-site.scm.azurewebsites.net:443/msdeploy.axd?site=elan-vital-public-site
+    website: elan-vital-public-site
+    username: $elan-vital-public-site
+    password:
+      secure: 1lVXnmUtf+sQkDG6FvwMBNCC8OPTww6ngnWNGgmEXC0W740JO1SPW8VDVOqQeIdDFY+ZBOD15T58c0BHi7SqFQ==
+    artifact: elan-vital-public-site
+    on:
+      branch: master
