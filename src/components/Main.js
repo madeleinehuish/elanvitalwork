@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/Main.css';
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
 
 class Main extends React.Component {
   constructor() {
@@ -13,7 +13,7 @@ class Main extends React.Component {
     const height = window.pageYOffset;
     const firstPic = ReactDOM.findDOMNode(this.refs.firstPic);
     const secondPic = ReactDOM.findDOMNode(this.refs.secondPic);
-    const thirdPic = ReactDOM.findDOMNode(this.refs.thirdPic);
+    // const thirdPic = ReactDOM.findDOMNode(this.refs.thirdPic);
 
     if (height > 200 && firstPic.classList.value.indexOf('back-opacity')  < 0) {
       firstPic.classList.add('back-opacity');
