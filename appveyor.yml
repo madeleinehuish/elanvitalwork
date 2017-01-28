@@ -10,6 +10,7 @@ install:
   # Output useful info for debugging.
   - node --version
   - npm --version
+  - set
 
 build_script:
   - npm run build
