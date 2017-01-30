@@ -27,12 +27,6 @@ class Header extends React.Component {
 
               <Dropdown className="projects-dropdown" ref="dropdown">
                 <DropdownTrigger>
-                  <span className="projects-dropdown__name">Give</span>
-                </DropdownTrigger>
-              </Dropdown>
-
-              <Dropdown className="projects-dropdown" ref="dropdown">
-                <DropdownTrigger>
                   <span className="projects-dropdown__name">Projects</span>
                 </DropdownTrigger>
                 <DropdownContent>
@@ -74,6 +68,12 @@ class Header extends React.Component {
                     </li>
                   </ul>
                 </DropdownContent>
+              </Dropdown>
+
+              <Dropdown className="projects-dropdown" ref="dropdown">
+                <DropdownTrigger>
+                  <span className="projects-dropdown__name">Give</span>
+                </DropdownTrigger>
               </Dropdown>
 
             </ul>

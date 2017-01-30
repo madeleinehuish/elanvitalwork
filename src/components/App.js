@@ -11,7 +11,6 @@ class App extends Component {
     return (
       <BrowserRouter>
         <main>
-          {/* test something */}
           <Header/>
           <Main/>
           <Footer/>
