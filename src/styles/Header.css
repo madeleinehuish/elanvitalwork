@@ -106,3 +106,9 @@ div.dropdown.dropdown--active.account.dropdown {
   border-radius: 5px;
 
 }
+
+div.dropdown.dropdown--active.projects.dropdown {
+  background-color: #705c5c;
+  border-radius: 5px;
+
+}
