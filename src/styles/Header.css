@@ -33,20 +33,16 @@ nav.six.columns > ul > li:first-letter {
   text-transform: uppercase;
 }
 
-nav.six.columns > ul > li {
-  padding-right: 25px;
-  padding-left: 25px;
-}
 
-li {
+li, a {
+  text-decoration: none;
   list-style: none;
-  /*margin-top: 10px;*/
   color: #e5e5e5;
   font-family: helvetica;
   font-weight: lighter;
 }
 
-a:-webkit-any-link {
+a:-webkit-any-link span.projects-dropdown__name {
   text-decoration: none;
   color: #e5e5e5;
   font-family: helvetica;
@@ -54,66 +50,56 @@ a:-webkit-any-link {
   /*margin-top: 10px;*/
 }
 
+
 h5 {
   margin-left: 30px;
   color: #e5e5e5;
   font-family: helvetica;
 }
 
-.dropdown {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.dropdown__content {
-    display: none;
-    position: absolute;
-}
-
-.dropdown--active .dropdown__content {
-    display: block;
-}
-
-/*.account-dropdown__link__anchor {
-  background-color: #705c5c;
-}*/
-
-div.dropdown__content {
-  background-color: #705c5c;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #544545;
-  padding-right: 5px;
-  padding-left: -5px;
-}
-
-a.dropdown__trigger {
-  padding: 25px;
-}
-
-a.dropdown__trigger:hover, li:hover {
-
-  background-color: #705c5c;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #544545;
-}
-
-div.dropdown.dropdown--active.account.dropdown {
+ #projectsDiv, #aboutDiv {
   background-color: #705c5c;
   border-radius: 5px;
 
 }
 
-div.dropdown.dropdown--active.projects.dropdown {
-  background-color: #705c5c;
-  border-radius: 5px;
 
+.projectsTitle {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-right: 15px;
+  color: #e5e5e5;
+  font-family: helvetica;
+  font-weight: lighter;
 }
 
-.nonDropDownLink {
-  padding: 25px;
-  margin-top: -13px;
+.aboutTitle {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left:15px;
+  padding-right: 15px;
+  color: #e5e5e5;
+  font-family: helvetica;
+  font-weight: lighter;
+}
+
+.giveTitle {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left:15px;
+  color: #e5e5e5;
+  font-family: helvetica;
+  font-weight: lighter;
+}
+
+.active {
+  display: block;
+  position:absolute;
+  padding-top: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.nonActive {
+  display: none;
 }
