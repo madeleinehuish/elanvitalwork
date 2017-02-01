@@ -46,5 +46,14 @@
 }
 
 .second-section {
-  height: 40rem;
+  height: 45rem;
+}
+
+.profile-pictures {
+  background-color: #b7b3b3;
+}
+
+.profile-pictures > img {
+  padding: .7rem 0 0;
+  height: 30rem;
 }

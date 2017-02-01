@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/Main.css';
+import profilePic1 from '../assets/images/passport_pic.jpg';
+import profilePic2 from '../assets/images/fbb115b8_1385308.jpg';
 // import { Link } from 'react-router';
 
 class Main extends React.Component {
@@ -53,6 +55,20 @@ class Main extends React.Component {
         <div className="section second-section">
           <div className="container">
             <h3>Our People</h3>
+            <div className="row">
+              <div className="six columns">
+                <div className="profile-pictures">
+                  <img src={profilePic1}/>
+                </div>
+                <h4>CEO, R. Marc Fulmer</h4>
+              </div>
+              <div className="six columns">
+                <div className="profile-pictures">
+                  <img src={profilePic2}/>
+                </div>
+                <h4>Chairman, Darrel Potter</h4>
+              </div>
+            </div>
           </div>
         </div>
         <div ref="thirdPic" className="background background-three back"></div>
