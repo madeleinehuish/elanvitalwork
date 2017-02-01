@@ -1,17 +1,48 @@
 import React from 'react';
 // import { Link } from 'react-router';
 import '../../styles/Header.css';
-import Dropdown, { DropdownContent, DropdownTrigger } from "react-simple-dropdown";
 
 class Header extends React.Component {
 
   constructor() {
+
     super();
+    this.state = {
+      displayProjectsNav: 'nonActive',
+      displayAboutNav: 'nonActive'
+    };
     this.handleLinkClick = this.handleLinkClick.bind(this);
+    this.handleProjectsMouseEnter = this.handleProjectsMouseEnter.bind(this);
+    this.handleProjectsMouseLeave = this.handleProjectsMouseLeave.bind(this);
+    this.handleAboutMouseEnter = this.handleAboutMouseEnter.bind(this);
+    this.handleAboutMouseLeave = this.handleAboutMouseLeave.bind(this);
   }
 
   handleLinkClick() {
-    this.refs.dropdown.hide();
+    // this.refs.dropdown.hide();
+    // this.displayProjectsNav = false;
+    this.setState({ displayProjectsNav: 'nonActive' });
+    this.setState({ displayAboutNav: 'nonActive' });
+  }
+
+  handleProjectsMouseEnter() {
+    this.setState({ displayProjectsNav: 'active' });
+    // this.displayProjectsNav = true;
+  }
+
+  handleProjectsMouseLeave() {
+    this.setState({ displayProjectsNav: 'nonActive' });
+    // this.displayProjectsNav = false;
+  }
+
+  handleAboutMouseEnter() {
+    this.setState({ displayAboutNav: 'active' });
+    // this.displayProjectsNav = true;
+  }
+
+  handleAboutMouseLeave() {
+    this.setState({ displayAboutNav: 'nonActive' });
+    // this.displayProjectsNav = false;
   }
 
   render() {
@@ -23,13 +54,12 @@ class Header extends React.Component {
             <h5>Elan Vital Solutions</h5>
           </div>
           <nav className="six columns">
-            <ul>
+            <ul >
 
-              <Dropdown className="projects-dropdown" ref="dropdown">
-                <DropdownTrigger>
-                  <span className="projects-dropdown__name">Projects</span>
-                </DropdownTrigger>
-                <DropdownContent>
+              <div className="projectsTitle" onMouseEnter={this.handleProjectsMouseEnter} onMouseLeave={this.handleProjectsMouseLeave}>
+                <span>Projects</span>
+
+              <div className={this.state.displayProjectsNav} id="projectsDiv">
                   <ul className="projects-dropdown__quick-links projects-dropdown__segment">
                     <li className="projects-dropdown__link">
                       <a className="projects-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
@@ -42,39 +72,34 @@ class Header extends React.Component {
                       </a>
                     </li>
                   </ul>
-                </DropdownContent>
-              </Dropdown>
+              </div>
+              </div>
 
-              <Dropdown>
-                <DropdownTrigger>
-                  <span className="account-dropdown__name">About</span>
-                </DropdownTrigger>
-                <DropdownContent>
-                  <ul className="account-dropdown__quick-links account-dropdown__segment">
-                    <li className="account-dropdown__link">
-                      <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                        Staff
-                      </a>
-                    </li>
-                    <li className="account-dropdown__link">
-                      <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                        Board of Directors
-                      </a>
-                    </li>
-                    <li className="account-dropdown__link">
-                      <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                        Advisory Board
-                      </a>
-                    </li>
-                  </ul>
-                </DropdownContent>
-              </Dropdown>
+              <div className="aboutTitle" onMouseEnter={this.handleAboutMouseEnter} onMouseLeave={this.handleAboutMouseLeave}>
+                <span>About</span>
 
-              <Dropdown className="projects-dropdown" ref="dropdown">
-                <DropdownTrigger>
-                  <span className="projects-dropdown__name">Give</span>
-                </DropdownTrigger>
-              </Dropdown>
+              <div className={this.state.displayAboutNav} id="aboutDiv">
+                <ul className="account-dropdown__quick-links account-dropdown__segment">
+                  <li className="account-dropdown__link">
+                    <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                      Staff
+                    </a>
+                  </li>
+                  <li className="account-dropdown__link">
+                    <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                      Board of Directors
+                    </a>
+                  </li>
+                  <li className="account-dropdown__link">
+                    <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                      Advisory Board
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              </div>
+
+              <span className="giveTitle">Give</span>
 
             </ul>
           </nav>
