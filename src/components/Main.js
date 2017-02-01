@@ -58,13 +58,13 @@ class Main extends React.Component {
             <div className="row">
               <div className="six columns">
                 <div className="profile-pictures">
-                  <img src={profilePic1}/>
+                  <img src={profilePic1} alt="Marc"/>
                 </div>
                 <h4>CEO, R. Marc Fulmer</h4>
               </div>
               <div className="six columns">
                 <div className="profile-pictures">
-                  <img src={profilePic2}/>
+                  <img src={profilePic2} alt="Darrel"/>
                 </div>
                 <h4>Chairman, Darrel Potter</h4>
               </div>
