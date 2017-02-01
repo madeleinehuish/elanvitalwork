@@ -57,7 +57,7 @@ class Header extends React.Component {
             <ul >
 
               <div className="projectsTitle" onMouseEnter={this.handleProjectsMouseEnter} onMouseLeave={this.handleProjectsMouseLeave}>
-                <span>Projects</span>
+                <span id="projectsTitleSpan">projects</span>
 
               <div className={this.state.displayProjectsNav} id="projectsDiv">
                   <ul className="projects-dropdown__quick-links projects-dropdown__segment">
@@ -76,7 +76,7 @@ class Header extends React.Component {
               </div>
 
               <div className="aboutTitle" onMouseEnter={this.handleAboutMouseEnter} onMouseLeave={this.handleAboutMouseLeave}>
-                <span>About</span>
+                <span>about</span>
 
               <div className={this.state.displayAboutNav} id="aboutDiv">
                 <ul className="account-dropdown__quick-links account-dropdown__segment">
@@ -99,7 +99,7 @@ class Header extends React.Component {
               </div>
               </div>
 
-              <span className="giveTitle">Give</span>
+              <span className="giveTitle">give</span>
 
             </ul>
           </nav>

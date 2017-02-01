@@ -10,7 +10,7 @@ header > div.container {
 }
 
 header > div.twelve.columns, nav.six.columns {
-  height: 50px;
+  height: 100%;
 }
 
 #titleWord {
@@ -20,9 +20,9 @@ header > div.twelve.columns, nav.six.columns {
 nav.six.columns > ul {
   display: flex;
   float: right;
-  margin-top: 13px;
+  /*margin-top: 13px;*/
   width: 64%;
-  height: 50px;
+  height: 100%;
 }
 
 nav.six.columns > ul > li {
@@ -40,6 +40,10 @@ li, a {
   color: #e5e5e5;
   font-family: helvetica;
   font-weight: lighter;
+}
+
+li:hover, a:hover {
+  color: #cecece;
 }
 
 a:-webkit-any-link span.projects-dropdown__name {
@@ -60,13 +64,19 @@ h5 {
  #projectsDiv, #aboutDiv {
   background-color: #705c5c;
   border-radius: 5px;
+  border-style: solid;
+  border-color: #544545;
+  border-width: 1px;
+  text-align: left;
 
 }
 
-
 .projectsTitle {
   text-decoration: none;
-  padding-top: 10px;
+  text-align: center;
+  height: 100%;
+  padding-top: 23px;
+  padding-left: 15px;
   padding-right: 15px;
   color: #e5e5e5;
   font-family: helvetica;
@@ -75,7 +85,9 @@ h5 {
 
 .aboutTitle {
   text-decoration: none;
-  padding-top: 10px;
+  text-align: center;
+  height: 100%;
+  padding-top: 23px;
   padding-left:15px;
   padding-right: 15px;
   color: #e5e5e5;
@@ -83,10 +95,20 @@ h5 {
   font-weight: lighter;
 }
 
+.projectsTitle:hover, .aboutTitle:hover, .giveTitle:hover {
+  background-color:#705c5c;
+  border-style: solid;
+  border-color: #544545;
+  border-width: 1px;
+}
+
 .giveTitle {
   text-decoration: none;
-  padding-top: 10px;
-  padding-left:15px;
+  text-align: center;
+  height: 100%;
+  padding-top: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #e5e5e5;
   font-family: helvetica;
   font-weight: lighter;

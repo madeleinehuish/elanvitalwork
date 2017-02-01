@@ -19,11 +19,11 @@ class Footer extends React.Component {
             </div>
             <div className="four columns">
               <h5 id="footerTopText">Contact Us</h5>
-              <p>Pilgrim Africa</p>
-              <p>115 N 85th St #202</p>
-              <p>Seattle, WA 98103, USA</p>
-              <p>Tel: +1 (206) 706-0350</p>
-              <p>Email: info@pilgrimafrica.org</p>
+              <p>Elan Vital Solutions</p>
+              <p>18503 Teeside Lane</p>
+              <p>Arlington, WA 98223-5088, USA</p>
+              <p>Tel: +1 (206) 353-2328</p>
+              <p>Email: marc@elanvitalsolutions.org</p>
             </div>
           </div>
         </div>
