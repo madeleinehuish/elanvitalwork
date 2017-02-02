@@ -22,7 +22,7 @@ p {
 }
 
 #lowerFooter {
-	height: 50px;
+	height: 55px;
 	background-color: #3f3334;
 }
 
@@ -33,23 +33,23 @@ p {
 
 #facebookLogo {
 	margin-left: 80%;
-	margin-top: 5px;
-	height: 40px;
-	width: 40px;
+	margin-top: 10px;
+	height: 35px;
+	width: 35px;
 }
 
 #twitterLogo {
 	margin-left: 2%;
-	margin-top: 5px;
-	height: 40px;
-	width: 40px;
+	margin-top: 10px;
+	height: 35px;
+	width: 35px;
 }
 
 #linkedinLogo {
 	margin-left: 2%;
-	margin-top: 5px;
-	height: 40px;
-	width: 40px;
+	margin-top: 10px;
+	height: 35px;
+	width: 35px;
 }
 
 .spacer {
