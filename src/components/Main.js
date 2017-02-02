@@ -47,7 +47,7 @@ class Main extends React.Component {
         <div className="section">
           <div className="container">
             <h3>Our Mission</h3>
-
+            <h5 id="missionStatement">"To demonstrate Christ’s love to people experiencing homelessness through the provision of transitional housing, education and job training."</h5>
           </div>
         </div>
         <div ref="secondPic" className="background background-two back">

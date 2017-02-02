@@ -1,6 +1,9 @@
 import React from 'react';
 // import { Link } from 'react-router';
 import '../../styles/Footer.css';
+import facebookLogo from '../../assets/images/Facebook_logo.png';
+import twitterLogo from '../../assets/images/twitter_logo.png';
+import linkedinLogo from '../../assets/images/linkedin-icon-cropped.png';
 
 class Footer extends React.Component {
 
@@ -28,7 +31,14 @@ class Footer extends React.Component {
           </div>
         </div>
         <div className="twelve columns" id="lowerFooter">
-          <p>copyright and social media links</p>
+          <div className="row">
+
+            <div className="eleven columns">
+              <a href="https://www.facebook.com/elanvitalsolutions/" target="_blank"><img src={facebookLogo} id="facebookLogo" /></a>
+              <a href="https://twitter.com/ElanVitalSol" target="_blank"><img src={twitterLogo} id="twitterLogo" /></a>
+              <a href="https://www.linkedin.com/in/marc-fulmer-1040464" target="_blank"><img src={linkedinLogo} id="linkedinLogo" /></a>
+            </div>
+          </div>
         </div>
       </footer>
     );

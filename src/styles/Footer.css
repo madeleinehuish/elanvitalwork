@@ -30,3 +30,28 @@ p {
 	margin-top: 20px;
 	font-size: 90%;
 }
+
+#facebookLogo {
+	margin-left: 80%;
+	margin-top: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+#twitterLogo {
+	margin-left: 2%;
+	margin-top: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+#linkedinLogo {
+	margin-left: 2%;
+	margin-top: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.spacer {
+	width: 100%;
+}
