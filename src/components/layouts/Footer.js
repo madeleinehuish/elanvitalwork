@@ -34,9 +34,9 @@ class Footer extends React.Component {
           <div className="row">
 
             <div className="eleven columns">
-              <a href="https://www.facebook.com/elanvitalsolutions/" alt="facebookLogo" target="_blank"><img src={facebookLogo} id="facebookLogo" /></a>
-              <a href="https://twitter.com/ElanVitalSol" alt="twitterLogo" target="_blank"><img src={twitterLogo} id="twitterLogo" /></a>
-              <a href="https://www.linkedin.com/in/marc-fulmer-1040464" alt="linkedInLogo" target="_blank"><img src={linkedinLogo} id="linkedinLogo" /></a>
+              <a href="https://www.facebook.com/elanvitalsolutions/"  target="_blank"><img src={facebookLogo} alt="facebookLogo" id="facebookLogo" /></a>
+              <a href="https://twitter.com/ElanVitalSol" target="_blank"><img src={twitterLogo} alt="facebookLogo" id="twitterLogo" /></a>
+              <a href="https://www.linkedin.com/in/marc-fulmer-1040464" target="_blank"><img src={linkedinLogo} alt="facebookLogo" id="linkedinLogo" /></a>
             </div>
           </div>
         </div>
