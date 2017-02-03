@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import '../styles/Newsletter.css';
 
 
 class Newsletter extends React.Component {
-  constructor() {
-    super();
-
-  }
+  // constructor() {
+  //   super();
+  //
+  // }
 
   render() {
     return (
