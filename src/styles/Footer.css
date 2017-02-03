@@ -52,6 +52,13 @@ p {
 	width: 35px;
 }
 
+#instagramLogo {
+	margin-left: 2%;
+	margin-top: 10px;
+	height: 35px;
+	width: 35px;
+}
+
 .spacer {
 	width: 100%;
 }

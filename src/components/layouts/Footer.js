@@ -4,6 +4,7 @@ import '../../styles/Footer.css';
 import facebookLogo from '../../assets/images/Facebook_logo.png';
 import twitterLogo from '../../assets/images/twitter_logo.png';
 import linkedinLogo from '../../assets/images/linkedin-icon-cropped.png';
+import instagramLogo from '../../assets/images/instagram_logo.png';
 
 class Footer extends React.Component {
 
@@ -37,6 +38,7 @@ class Footer extends React.Component {
               <a href="https://www.facebook.com/elanvitalsolutions/"  target="_blank"><img src={facebookLogo} alt="facebookLogo" id="facebookLogo" /></a>
               <a href="https://twitter.com/ElanVitalSol" target="_blank"><img src={twitterLogo} alt="facebookLogo" id="twitterLogo" /></a>
               <a href="https://www.linkedin.com/in/marc-fulmer-1040464" target="_blank"><img src={linkedinLogo} alt="facebookLogo" id="linkedinLogo" /></a>
+              <a href="https://www.instagram.com/elanvitalsolutions/" target="_blank"><img src={instagramLogo} alt="instagramLogo" id="instagramLogo" /></a>
             </div>
           </div>
         </div>
