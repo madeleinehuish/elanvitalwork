@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router';
+import { Link } from 'react-router';
 import '../../styles/Header.css';
 
 class Header extends React.Component {
@@ -51,13 +51,13 @@ class Header extends React.Component {
       <header>
         <div className="twelve columns">
           <div className="six columns" id="titleWord">
-            <h5>Elan Vital Solutions</h5>
+            <h5><Link to="/">Elan Vital Solutions</Link></h5>
           </div>
           <nav className="six columns">
             <ul >
 
               <div className="projectsTitle" onMouseEnter={this.handleProjectsMouseEnter} onMouseLeave={this.handleProjectsMouseLeave}>
-                <span id="projectsTitleSpan">projects</span>
+                <span id="projectsTitleSpan">Projects</span>
 
               <div className={this.state.displayProjectsNav} id="projectsDiv">
                   <ul className="projects-dropdown__quick-links projects-dropdown__segment">
@@ -76,7 +76,7 @@ class Header extends React.Component {
               </div>
 
               <div className="aboutTitle" onMouseEnter={this.handleAboutMouseEnter} onMouseLeave={this.handleAboutMouseLeave}>
-                <span>about</span>
+                <span>About</span>
 
               <div className={this.state.displayAboutNav} id="aboutDiv">
                 <ul className="account-dropdown__quick-links account-dropdown__segment">
@@ -99,7 +99,8 @@ class Header extends React.Component {
               </div>
               </div>
 
-              <span className="giveTitle">give</span>
+              <span className="giveTitle"><Link to="/newsletter">News</Link></span>
+              <span className="giveTitle">Give</span>
 
             </ul>
           </nav>

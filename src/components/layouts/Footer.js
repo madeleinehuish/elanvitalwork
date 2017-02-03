@@ -32,8 +32,8 @@ class Footer extends React.Component {
         </div>
         <div className="twelve columns" id="lowerFooter">
           <div className="row">
-
-            <div className="eleven columns">
+            <div className="eight columns" id="copyright">Copyright Elan Vital Solutions. All Rights Reserved</div>
+            <div className="four columns">
               <a href="https://www.facebook.com/elanvitalsolutions/"  target="_blank"><img src={facebookLogo} alt="facebookLogo" id="facebookLogo" /></a>
               <a href="https://twitter.com/ElanVitalSol" target="_blank"><img src={twitterLogo} alt="facebookLogo" id="twitterLogo" /></a>
               <a href="https://www.linkedin.com/in/marc-fulmer-1040464" target="_blank"><img src={linkedinLogo} alt="facebookLogo" id="linkedinLogo" /></a>
