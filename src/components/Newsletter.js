@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import MyPdfViewer from './MyPdfViewer';
+// import MyPdfViewer from './MyPdfViewer';
 import '../styles/Newsletter.css';
 
 
