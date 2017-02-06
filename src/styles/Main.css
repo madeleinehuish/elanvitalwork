@@ -60,4 +60,11 @@
 
 #missionStatement {
   color: black;
+  font-size: 1.2em;
+}
+
+.extMissionStatement {
+  text-align: center;
+  font-size: .7em;
+
 }

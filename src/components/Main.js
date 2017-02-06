@@ -43,11 +43,15 @@ class Main extends React.Component {
       <section>
         <div ref="firstPic" className="background background-one back">
           <h1>Elan Vital Solutions</h1>
+          <h5>“serving those experiencing homelessness”</h5>
         </div>
         <div className="section">
           <div className="container">
             <h3>Our Mission</h3>
             <h5 id="missionStatement">"To demonstrate Christ’s love to people experiencing homelessness through the provision of transitional housing, education and job training."</h5>
+            <p className="extMissionStatement">Elan Vital Solutions mission is to serve those experiencing homelessness. Our focus is housing.</p>
+            <p className="extMissionStatement">We offer unique housing solutions teaming with nonprofits who offer programs to provide the homeless with comprehensive care, counseling and training.</p>
+            <p className="extMissionStatement">Our goal is to see self-reliant individuals exiting the programs offered.</p>
           </div>
         </div>
         <div ref="secondPic" className="background background-two back">

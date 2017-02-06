@@ -1,19 +1,18 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
+import MyPdfViewer from './MyPdfViewer';
 import '../styles/Newsletter.css';
 
 
 class Newsletter extends React.Component {
-  // constructor() {
-  //   super();
-  //
-  // }
+
 
   render() {
     return (
       <section>
         <div>
           <h3>Newsletters</h3>
+          {/* <MyPdfViewer></MyPdfViewer> */}
         </div>
 
 
