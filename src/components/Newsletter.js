@@ -12,7 +12,9 @@ class Newsletter extends React.Component {
       <section>
         <div>
           <h3>Newsletters</h3>
-          {/* <MyPdfViewer></MyPdfViewer> */}
+          <div className="pdf-view">
+            <MyPdfViewer/>
+          </div>
         </div>
 
 

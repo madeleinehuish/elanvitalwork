@@ -58,13 +58,15 @@
   height: 30rem;
 }
 
-#missionStatement {
+
+.extMission-statement {
+  line-height: inherit;
   color: black;
-  font-size: 1.2em;
+  text-align: center;
+  font-size: 1em;
 }
 
-.extMissionStatement {
-  text-align: center;
-  font-size: .7em;
-
+#mission-statement {
+  color: black;
+  font-size: 1.2em;
 }

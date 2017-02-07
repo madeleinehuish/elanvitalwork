@@ -1,5 +1,6 @@
 import React from 'react';
 import PDF from 'react-pdf-js';
+import '../styles/MyPdfViewer.css';
 import octoberNewsletter from '../assets/newsletters/newsletterOCT2016.pdf';
 
 class MyPdfViewer extends React.Component {
@@ -9,6 +10,10 @@ class MyPdfViewer extends React.Component {
     this.onPageComplete = this.onPageComplete.bind(this);
     this.handlePrevious = this.handlePrevious.bind(this);
     this.handleNext = this.handleNext.bind(this);
+    this.state = {
+      page: 0,
+      pages: 0
+    };
   }
 
   onDocumentComplete(pages) {
@@ -52,9 +57,13 @@ class MyPdfViewer extends React.Component {
       pagination = this.renderPagination(this.state.page, this.state.pages);
     }
     return (
-      <div>
-      test
-        <PDF file={octoberNewsletter} onDocumentComplete={this.onDocumentComplete} onPageComplete={this.onPageComplete} page={this.state.page} />
+      <div className="container">
+        <PDF
+          file={octoberNewsletter}
+          onDocumentComplete={this.onDocumentComplete}
+          onPageComplete={this.onPageComplete}
+          page={this.state.page}
+        />
         {pagination}
       </div>
     )
