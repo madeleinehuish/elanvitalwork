@@ -41,6 +41,7 @@ li, a {
   color: #e5e5e5;
   font-family: helvetica;
   font-weight: lighter;
+  margin: 0 0.5rem 0 -0.5rem;
 }
 
 li:hover, a:hover {

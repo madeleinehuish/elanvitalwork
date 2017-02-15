@@ -54,49 +54,48 @@ class Header extends React.Component {
             <h5><Link to="/">Elan Vital Solutions</Link></h5>
           </div>
           <nav className="six columns">
-            <ul >
-
+            <ul>
               <div className="projectsTitle" onMouseEnter={this.handleProjectsMouseEnter} onMouseLeave={this.handleProjectsMouseLeave}>
                 <span id="projectsTitleSpan">Projects</span>
 
-              <div className={this.state.displayProjectsNav} id="projectsDiv">
-                  <ul className="projects-dropdown__quick-links projects-dropdown__segment">
-                    <li className="projects-dropdown__link">
-                      <a className="projects-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                        U.S.A.
-                      </a>
-                    </li>
-                    <li className="projects-dropdown__link">
-                      <a className="projects-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                        Africa
-                      </a>
-                    </li>
-                  </ul>
-              </div>
+                <div className={this.state.displayProjectsNav} id="projectsDiv">
+                    <ul className="projects-dropdown__quick-links projects-dropdown__segment">
+                      <li className="projects-dropdown__link">
+                        <a className="projects-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                          U.S.A.
+                        </a>
+                      </li>
+                      <li className="projects-dropdown__link">
+                        <a className="projects-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                          Africa
+                        </a>
+                      </li>
+                    </ul>
+                </div>
               </div>
 
               <div className="aboutTitle" onMouseEnter={this.handleAboutMouseEnter} onMouseLeave={this.handleAboutMouseLeave}>
                 <span>About</span>
 
-              <div className={this.state.displayAboutNav} id="aboutDiv">
-                <ul className="account-dropdown__quick-links account-dropdown__segment">
-                  <li className="account-dropdown__link">
-                    <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                      Staff
-                    </a>
-                  </li>
-                  <li className="account-dropdown__link">
-                    <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                      Board of Directors
-                    </a>
-                  </li>
-                  <li className="account-dropdown__link">
-                    <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
-                      Advisory Board
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                <div className={this.state.displayAboutNav} id="aboutDiv">
+                  <ul className="account-dropdown__quick-links account-dropdown__segment">
+                    <li className="account-dropdown__link">
+                      <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                        Staff
+                      </a>
+                    </li>
+                    <li className="account-dropdown__link">
+                      <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                        Board of Directors
+                      </a>
+                    </li>
+                    <li className="account-dropdown__link">
+                      <a className="account-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                        Advisory Board
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <span className="giveTitle"><Link to="/newsletter">News</Link></span>
