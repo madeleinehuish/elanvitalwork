@@ -6,7 +6,6 @@ import '../styles/Newsletter.css';
 
 class Newsletter extends React.Component {
 
-
   render() {
     return (
       <section>
@@ -16,13 +15,10 @@ class Newsletter extends React.Component {
             <MyPdfViewer/>
           </div>
         </div>
-
-
-
-
       </section>
-      );
-    }
+    );
   }
+
+}
 
 export default Newsletter;

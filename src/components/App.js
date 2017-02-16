@@ -3,7 +3,7 @@ import { BrowserRouter, Match } from 'react-router';
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import Main from './Main';
-import Newsletter from './Newsletter';
+import NewsMenu from './NewsMenu';
 import '../styles/App.css';
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
             />
           }/>
           <Match pattern="/newsletter" exactly render={
-            () => <Newsletter
+            () => <NewsMenu
                 { ...this.state }
             />
           }/>

@@ -50,14 +50,13 @@ class Header extends React.Component {
     return (
       <header>
         <div className="twelve columns">
-          <div className="six columns" id="titleWord">
+          <div className="six columns" id="titleWordDiv">
             <h5><Link to="/">Elan Vital Solutions</Link></h5>
           </div>
           <nav className="six columns">
             <ul>
               <div className="projectsTitle" onMouseEnter={this.handleProjectsMouseEnter} onMouseLeave={this.handleProjectsMouseLeave}>
                 <span id="projectsTitleSpan">Projects</span>
-
                 <div className={this.state.displayProjectsNav} id="projectsDiv">
                     <ul className="projects-dropdown__quick-links projects-dropdown__segment">
                       <li className="projects-dropdown__link">
@@ -97,8 +96,8 @@ class Header extends React.Component {
                   </ul>
                 </div>
               </div>
-
-              <span className="giveTitle"><Link to="/newsletter">News</Link></span>
+              <span className="giveTitle">News</span>
+              {/* <span className="giveTitle"><Link to="/newsletter">News</Link></span> */}
               <span className="giveTitle">Give</span>
 
             </ul>

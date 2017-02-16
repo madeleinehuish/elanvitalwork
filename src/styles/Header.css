@@ -13,15 +13,20 @@ header > div.twelve.columns, nav.six.columns {
   height: 100%;
 }
 
-#titleWord {
-  margin-top: 15px;
+nav {
+  width: 100&;
+  margin: 0;
+  padding-right: 50px;
+}
 
+#titleWordDiv {
+  margin-top: 15px;
+  padding-left: 50px;
 }
 
 nav.six.columns > ul {
   display: flex;
   float: right;
-  /*margin-top: 13px;*/
   width: 64%;
   height: 100%;
 }
@@ -63,29 +68,39 @@ h5 {
   font-family: helvetica;
 }
 
- #projectsDiv, #aboutDiv {
-  background-color: #705c5c;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: #544545;
-  border-width: 1px;
-  text-align: left;
 
-}
 
 .projectsTitle {
   text-decoration: none;
   text-align: center;
   height: 100%;
+  /*line-height: 100%;
+  white-space: nowrap;*/
   margin: 0;
+  box-sizing: border-box;
+  /*padding-top: 23px;*/
   padding-top: 23px;
+  padding-bottom: 23px;
   padding-left: 15px;
   padding-right: 15px;
+
   color: #e5e5e5;
   font-family: helvetica;
   font-weight: lighter;
+  postition: relative;
 }
 
+#projectsDiv, #aboutDiv {
+ background-color: #705c5c;
+ border-radius: 2px;
+ border-style: solid;
+ border-color: #544545;
+ border-width: 1px;
+ text-align: left;
+ position: absolute;
+ margin-top: 15px;
+ box-sizing: border-box;
+}
 /*#projectsTitleSpan {
   padding-top: 23px;
   padding-left: 15px;
@@ -97,7 +112,9 @@ h5 {
   text-decoration: none;
   text-align: center;
   height: 100%;
+  box-sizing: border-box;
   padding-top: 23px;
+  padding-bottom: 23px;
   padding-left:15px;
   padding-right: 15px;
   color: #e5e5e5;
@@ -110,13 +127,16 @@ h5 {
   border-style: solid;
   border-color: #544545;
   border-width: 1px;
+  border-radius: 2px;
 }
 
 .giveTitle {
   text-decoration: none;
   text-align: center;
   height: 100%;
+  box-sizing: border-box;
   padding-top: 23px;
+  padding-bottom: 23px;
   padding-left: 15px;
   padding-right: 15px;
   color: #e5e5e5;
@@ -126,9 +146,11 @@ h5 {
 
 .active {
   display: block;
-  position:absolute;
-  padding-top: 25px;
-  margin-left: 5px;
+   /*text-align: center;*/
+  /*box-sizing: border-box;*/
+  /*position:absolute;*/
+  /*padding-top: 25px;*/
+  /*margin-left: 5px;*/
   cursor: pointer;
 }
 
