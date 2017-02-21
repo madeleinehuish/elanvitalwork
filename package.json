@@ -48,9 +48,12 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "radium": "^0.18.1",
     "react": "^15.4.2",
+    "react-burger-menu": "^1.10.12",
     "react-dom": "^15.4.2",
     "react-pdf-js": "^1.0.33",
+    "react-responsive": "^1.2.6",
     "react-router": "^4.0.0-alpha.6"
   },
   "scripts": {

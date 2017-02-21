@@ -69,3 +69,22 @@ p {
 	font-weight: lighter;
 	font-size: .8em;
 }
+
+@media (max-width: 750px) {
+
+	#upperFooter {
+		height: 200px;
+	}
+
+	#copyright {
+		padding-left: 5px;
+		padding-top: 15px;
+		font-weight: lighter;
+		font-size: .8em;
+	}
+
+
+	#lowerFooter {
+		height: 100px;
+	}
+}

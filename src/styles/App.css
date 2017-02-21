@@ -1,1 +1,12 @@
 
+main {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+
+/*main {
+	white-space: nowrap;
+    max-width: 100%;
+}*/
