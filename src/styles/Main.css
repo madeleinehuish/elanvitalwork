@@ -81,10 +81,10 @@
     text-align: center;
   }
 
-  .background-one {
+  /*.background-one {
     max-width: 100%;
     height: auto;
-  }
+  }*/
 
   .background-one > h1 {
     margin-top: 20rem;
@@ -104,4 +104,7 @@
     height: 80rem;
   }
 
+  .back {
+    background-attachment: scroll;
+  }
 }
