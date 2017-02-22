@@ -103,8 +103,8 @@ class Header extends React.Component {
                     </ul>
                   </div>
                 </div>
-                <span className="giveTitle">News</span>
-                {/* <span className="giveTitle"><Link to="/newsletter">News</Link></span> */}
+                {/* <span className="giveTitle">News</span> */}
+                <span className="giveTitle"><Link to="/newsletter">News</Link></span>
                 <span className="giveTitle">Give</span>
               </ul>
             </nav>
