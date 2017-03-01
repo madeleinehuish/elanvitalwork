@@ -23,11 +23,13 @@ class Header extends React.Component {
     this.handleAboutMouseLeave = this.handleAboutMouseLeave.bind(this);
   }
 
-  handleLinkClick() {
+  handleLinkClick(event) {
     // this.refs.dropdown.hide();
     // this.displayProjectsNav = false;
-    this.setState({ displayProjectsNav: 'nonActive' });
-    this.setState({ displayAboutNav: 'nonActive' });
+    console.log('the event target name is ' + event.target.name);
+    this.props.changeAnchor(event.target.name)
+    this.setState({ displayProjectsNav: 'nonActive', displayAboutNav: 'nonActive' });
+    // this.setState({ displayAboutNav: 'nonActive' });
   }
 
   handleProjectsMouseEnter() {
@@ -67,14 +69,14 @@ class Header extends React.Component {
                   <div className={this.state.displayProjectsNav} id="projectsDiv">
                       <ul className="projects-dropdown__quick-links projects-dropdown__segment">
                         <li className="projects-dropdown__link">
-                          <a className="projects-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                          <Link className="projects-dropdown__link__anchor" to="/projects" name="USAAnchor" onClick={this.handleLinkClick}>
                             U.S.A.
-                          </a>
+                          </Link>
                         </li>
                         <li className="projects-dropdown__link">
-                          <a className="projects-dropdown__link__anchor" href="#" onClick={this.handleLinkClick}>
+                          <Link className="projects-dropdown__link__anchor" to="/projects" name="africaAnchor" onClick={this.handleLinkClick}>
                             Africa
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                   </div>
@@ -105,7 +107,7 @@ class Header extends React.Component {
                 </div>
                 {/* <span className="giveTitle">News</span> */}
                 <span className="giveTitle"><Link to="/newsletter">News</Link></span>
-                <span className="giveTitle">Give</span>
+                <span className="giveTitle"><Link to="/give">Give</Link></span>
               </ul>
             </nav>
           </MediaQuery>
@@ -120,7 +122,12 @@ class Header extends React.Component {
                   <RadiumLink className="menu-item" to="/">Home</RadiumLink>
                 </div>
                 <div>
-                  <RadiumLink className="menu-item" to="/">Projects</RadiumLink>
+                  <RadiumLink className="menu-item" to="#">Projects</RadiumLink>
+                    {/* <p></p>
+                      <p><RadiumLink className="menu-item" to="/">USA</RadiumLink></p>
+                      <p><RadiumLink className="menu-item" to="/">Africa</RadiumLink></p> */}
+
+
                 </div>
                 <div>
                   <RadiumLink className="menu-item" to="/">About</RadiumLink>
