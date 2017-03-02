@@ -4,6 +4,9 @@
 header {
   height: 70px;
   background-color: #7e6768;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
   /*white-space: nowrap;
   max-width: 99%;*/
 }

@@ -3,6 +3,14 @@ footer {
   font-family: helvetica;
 }
 
+.left {
+	margin-left: 10em;
+}
+
+.right {
+	margin-left: 8em;
+}
+
 #upperFooter {
 	background-color: #7e6768;
 	height: 180px;
@@ -19,6 +27,20 @@ p {
 	margin-bottom: 1.7rem;
 	margin-left: 30px;
 	text-align: left;
+}
+
+form {
+	margin-left: 2em;
+	margin-top:-1em;
+}
+
+#submitButton {
+	margin-left: 1em;
+	height: 20px;
+	color: #e5e5e5;
+	padding: 0 20px 30px;
+	line-height: 30px;
+	font-size: 10px;
 }
 
 #lowerFooter {
@@ -64,7 +86,7 @@ p {
 }
 
 #copyright {
-	padding-left: 20px;
+	padding-left: 150px;
 	padding-top: 15px;
 	font-weight: lighter;
 	font-size: .8em;

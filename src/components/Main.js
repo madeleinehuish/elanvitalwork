@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router';
 import '../styles/Main.css';
-import profilePic1 from '../assets/images/passport_pic.jpg';
-import profilePic2 from '../assets/images/fbb115b8_1385308.jpg';
+import projectPic1 from '../assets/images/usahomeless.jpg';
+import projectPic2 from '../assets/images/africa.jpg';
 // import { Link } from 'react-router';
 
 class Main extends React.Component {
@@ -41,9 +42,12 @@ class Main extends React.Component {
   render() {
     return (
       <section>
+        <div id="topSpacer"></div>
         <div ref="firstPic" className="background background-one back">
-          <h1>Elan Vital Solutions</h1>
-          <h5>“Serving those experiencing homelessness”</h5>
+          <div id="titleWords">
+            <h1>Elan Vital Solutions</h1>
+            <h5>“Serving those experiencing homelessness”</h5>
+          </div>
         </div>
         <div className="section">
           <div className="container">
@@ -62,19 +66,21 @@ class Main extends React.Component {
         </div>
         <div className="section second-section">
           <div className="container">
-            <h3>Our People</h3>
+            <h3>Projects</h3>
             <div className="row">
               <div className="six columns">
-                <div className="profile-pictures">
-                  <img src={profilePic1} alt="Marc"/>
+                <div >
+                  <Link to='/projects'>
+                    <img src={projectPic1} className="profile-pictures" alt="USA projects"/>
+                  </Link>
                 </div>
-                <h4>CEO, R. Marc Fulmer</h4>
+                <h4>U.S.A.</h4>
               </div>
               <div className="six columns">
                 <div className="profile-pictures">
-                  <img src={profilePic2} alt="Darrel"/>
+                  <img src={projectPic2} className="profile-pictures" alt="Africa projects"/>
                 </div>
-                <h4>Chairman, Darrel Potter</h4>
+                <h4>Africa</h4>
               </div>
             </div>
           </div>
