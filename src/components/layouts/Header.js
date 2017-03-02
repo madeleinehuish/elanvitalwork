@@ -89,19 +89,19 @@ class Header extends React.Component {
                     <ul className="account-dropdown__quick-links account-dropdown__segment">
                       <li className="account-dropdown__link">
                         <Link className="account-dropdown__link__anchor" to="/about" name="staffAnchor" onClick={this.handleLinkClick}>
-                          Staff
+                          Our Story
                         </Link>
                       </li>
                       <li className="account-dropdown__link">
                         <Link className="account-dropdown__link__anchor" to="/about" name="directorsAnchor" onClick={this.handleLinkClick}>
-                          Board of Directors
+                          Leadership
                         </Link>
                       </li>
-                      <li className="account-dropdown__link">
+                      {/* <li className="account-dropdown__link">
                         <Link className="account-dropdown__link__anchor" to="/about" name="advisoryAnchor" onClick={this.handleLinkClick}>
                           Advisory Board
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
