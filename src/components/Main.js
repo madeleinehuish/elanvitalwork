@@ -77,8 +77,10 @@ class Main extends React.Component {
                 <h4>U.S.A.</h4>
               </div>
               <div className="six columns">
-                <div className="profile-pictures">
-                  <img src={projectPic2} className="profile-pictures" alt="Africa projects"/>
+                <div>
+                  <Link to='/projects'>
+                    <img src={projectPic2} className="profile-pictures" alt="Africa projects"/>
+                  </Link>
                 </div>
                 <h4>Africa</h4>
               </div>
