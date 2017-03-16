@@ -105,7 +105,7 @@ class About extends React.Component {
                     <img src={projectPic4} className="profile-pictures" alt="USA projects"/>
 
                 </div>
-                {/* <h4>U.S.A.</h4> */}
+                {/* <h4>U.S.A.</h4> testing */}
               </div>
             </div>
           </div>
