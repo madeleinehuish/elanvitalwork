@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import projectPic1 from '../assets/images/africa3.jpg';
-import projectPic2 from '../assets/images/africa5.jpg';
+// import projectPic2 from '../assets/images/africa5.jpg';
 import projectPic3 from '../assets/images/profile1.jpg';
 import projectPic4 from '../assets/images/profile2.jpg';
 import '../styles/About.css';
