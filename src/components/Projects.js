@@ -1,11 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router';
+import projectPic1 from '../assets/images/IMG_4572.JPG';
+import projectPic2 from '../assets/images/africa5.jpg';
 import '../styles/Projects.css';
 
 
 class Projects extends React.Component {
 
+  constructor() {
+    super();
+    this.scrollEvent = this.scrollEvent.bind(this);
+  }
+
+  scrollEvent(e) {
+    const height = window.pageYOffset;
+    const firstPic = ReactDOM.findDOMNode(this.refs.firstPic);
+    const secondPic = ReactDOM.findDOMNode(this.refs.secondPic);
+    // const thirdPic = ReactDOM.findDOMNode(this.refs.thirdPic);
+
+    if (height > 200 && firstPic.classList.value.indexOf('back-opacity')  < 0) {
+      firstPic.classList.add('back-opacity');
+    } else if (height < 200 && firstPic.classList.value.indexOf('back-opacity')  > 0) {
+      firstPic.classList.remove('back-opacity');
+    }
+
+    if (height > 1000 && secondPic.classList.value.indexOf('back-opacity')  < 0) {
+      secondPic.classList.add('back-opacity');
+    } else if (height < 1000 && secondPic.classList.value.indexOf('back-opacity')  > 0) {
+      secondPic.classList.remove('back-opacity');
+    }
+  }
+
   componentDidMount() {
+    window.addEventListener('scroll', this.scrollEvent);
     let anchor = this.props.anchor;
     let node;
 
@@ -23,55 +51,59 @@ class Projects extends React.Component {
     node.scrollIntoView();
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollEvent);
+  }
+
+
+
   render() {
     return (
       <section>
-        <div>
-          <h3>Projects</h3>
-          <a ref="USAAnchor">USA PROJECTS</a>
-          <div>
-            i. Arlington Veterans Training Center – drawings and description
+        <div id="topSpacer"></div>
+        <div ref="firstPic" className="background background-projects-one back">
+          <div id="titleWordsProjects">
+            <h2>Projects Covering the USA and Africa</h2>
+            {/* <h5>“Covering the USA and Africa”</h5> */}
           </div>
-          <div>
-            ii. Stand Alone Units (SAUs) Describe lease program
-          </div>
-          <div>
-            i. Show 3 models
-          </div>
-          <div>
-            a. SAU 1 Buddy Bunkhouse – drawings and description
-          </div>
-          <div>
-            b. SAU 2 Chateaux Elan Vital – drawings and description
-          </div>
-          <div>
-            c. SAU 3 Buddy Bungalow – drawings and description
-          </div>
-          <div>
-            i. Potential clients
-          </div>
-          <div>
-            1. Pastor Kim
-          </div>
-          <div>
-            2. Four Square Church, Marysville, WA
-          </div>
-          <div>
-            3. HR Project, Marysville, WA
-          </div>
-          <div>
-            iii. Marysville Veterans Center – drawings and description
-          </div>
-          <div>
-            iv. Marysville 150 Unit for x-cons – Pastor John Mack – drawings and description
-          </div>
-          <div>
-            v. Pastor DJ Rabe, Covision Ministries - Portable cloths washing and showers for homeless - drawings and description
-          </div>
-          <a ref="africaAnchor">AFRICA PROJECTS</a>
         </div>
+        <div className="section">
+          <div className="container">
+            <h3>Our USA Projects</h3>
+            <div className="row">
+              <div className="twelve columns">
+                <div >
+                  <Link to='/projects'>
+                    <img src={projectPic1} className="profile-pictures" alt="USA projects"/>
+                  </Link>
+                </div>
+                {/* <h4>U.S.A.</h4> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ref="secondPic" className="background  back">
+        </div>
+        <div className="section second-section">
+          <div className="container">
+            <h3>Our Africa Projects</h3>
+            <a ref="africaAnchor"></a>
+            <div className="row">
+              <div className="twelve columns">
+                <div >
+                  <Link to='/projects'>
+                    <img src={projectPic2} className="profile-pictures" alt="USA projects"/>
+                  </Link>
+                </div>
+                {/* <h4>U.S.A.</h4> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ref="thirdPic" className="background background-projects-three back"></div>
       </section>
-    );
+      );
+
   }
 
 }
