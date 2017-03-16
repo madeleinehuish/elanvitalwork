@@ -1,11 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router';
+import projectPic1 from '../assets/images/africa3.jpg';
+import projectPic2 from '../assets/images/africa5.jpg';
+import projectPic3 from '../assets/images/profile1.jpg';
+import projectPic4 from '../assets/images/profile2.jpg';
 import '../styles/About.css';
 
 
 class About extends React.Component {
 
+  constructor() {
+    super();
+    this.scrollEvent = this.scrollEvent.bind(this);
+  }
+
+  scrollEvent(e) {
+    const height = window.pageYOffset;
+    const firstPic = ReactDOM.findDOMNode(this.refs.firstPic);
+    const secondPic = ReactDOM.findDOMNode(this.refs.secondPic);
+    // const thirdPic = ReactDOM.findDOMNode(this.refs.thirdPic);
+
+    if (height > 200 && firstPic.classList.value.indexOf('back-opacity')  < 0) {
+      firstPic.classList.add('back-opacity');
+    } else if (height < 200 && firstPic.classList.value.indexOf('back-opacity')  > 0) {
+      firstPic.classList.remove('back-opacity');
+    }
+
+    if (height > 1000 && secondPic.classList.value.indexOf('back-opacity')  < 0) {
+      secondPic.classList.add('back-opacity');
+    } else if (height < 1000 && secondPic.classList.value.indexOf('back-opacity')  > 0) {
+      secondPic.classList.remove('back-opacity');
+    }
+  }
+
   componentDidMount() {
+    window.addEventListener('scroll', this.scrollEvent);
     let anchor = this.props.anchor;
     let node;
 
@@ -23,32 +53,67 @@ class About extends React.Component {
     node.scrollIntoView();
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollEvent);
+  }
+
+
+
   render() {
     return (
       <section>
-        <div>
-          <h3>About</h3>
-          <a ref="staffAnchor">Staff</a>
-          <div>
-            Marc Fulmer – CEO
+        <div id="topSpacer"></div>
+        <div ref="firstPic" className="background background-about-one back">
+          <div id="titleWordsProjects">
+            <h2>What is Elan Vital Solutions?</h2>
+            {/* <h5>“Covering the USA and Africa”</h5> */}
           </div>
-          <div>
-
-            Robert Marc Fulmer
-
-            Marc's early career years (1966-2002) were in the construction industry, mainly focused on general contracting in light commercial tenant improvements and hospital renovations. In 2002 Marc transitioned to the nonprofit world as a founding staff member and eventual President of Agathos International working in Africa on orphan care, medical and food relief. Marc remains as Director of GIK and Medical Relief for Agathos International. Marc also serves on the board of the Persecution Project Foundation working in Southern Sudan. In 2011 in addition to his nonprofit work, Marc went to work with his partners in Thain Boatworks Inc building passenger ferries for Eastern Africa. In August of 2016 Marc began to transition into a new role with Buddy Shelters LLC as VP as well as beginning the new nonprofit with his partner Darrel Potter called Elan Vital Solutions, addressing homelessness here in the United States. Marc resides in Arlington, WA and is married to Mae Fulmer for 24 years, they have four children and 4 grandchildren.
-
+        </div>
+        <div className="section">
+          <div className="container">
+            <h3>Our Story</h3>
+            <div className="row">
+              <div className="twelve columns">
+                <div >
+                  <Link to='/projects'>
+                    <img src={projectPic1} className="profile-pictures" alt="USA projects"/>
+                  </Link>
+                </div>
+                {/* <h4>U.S.A.</h4> */}
+              </div>
+            </div>
           </div>
-          <div>
-             David Scratchley – Development Director & Investor Relations
-          </div>
-            More to come
-          </div>
-          <a ref="directorsAnchor">Staff</a>
-          <a ref="advisoryAnchor">Staff</a>
+        </div>
+        <div ref="secondPic" className="background back">
+        </div>
+        <div className="section second-section">
+          <div className="container">
+            <h3>Our Leadership</h3>
+            <a ref="africaAnchor"></a>
+            <div className="row">
+              <div className="six columns">
+                <div >
 
+                    <img src={projectPic3} className="profile-pictures" alt="USA projects"/>
+
+                </div>
+                {/* <h4>U.S.A.</h4> */}
+              </div>
+              <div className="six columns">
+                <div >
+
+                    <img src={projectPic4} className="profile-pictures" alt="USA projects"/>
+
+                </div>
+                {/* <h4>U.S.A.</h4> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ref="thirdPic" className="background back"></div>
       </section>
-    );
+      );
+
   }
 
 }

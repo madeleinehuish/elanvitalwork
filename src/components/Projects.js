@@ -100,7 +100,7 @@ class Projects extends React.Component {
             </div>
           </div>
         </div>
-        <div ref="thirdPic" className="background background-projects-three back"></div>
+        <div ref="thirdPic" className="background back"></div>
       </section>
       );
 
