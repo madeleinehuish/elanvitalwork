@@ -1,8 +1,15 @@
-
 main {
     overflow: hidden;
     width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+.body {
+  flex: 1 0 auto;
+}
+
 
 
 

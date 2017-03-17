@@ -1,4 +1,20 @@
-.pdf-view {
+.newsletter {
+  position: absolute;
+  top: 15vh;
+  background-color: #fff;
   width: 100%;
-  text-align: center;
+}
+
+.month {
+  font-size: 2rem;
+  padding: 1rem 0;
+  margin-left: 5rem;
+}
+
+.month > a {
+  color: #3f3f3f;
+}
+
+.month > a:hover {
+  color: #969696;
 }

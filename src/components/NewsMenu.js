@@ -1,7 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router';
+import { BrowserRouter as Router} from 'react-router';
 // import Newsletter from './Newsletter';
-import MyPdfViewer from './MyPdfViewer';
+// import MyPdfViewer from './MyPdfViewer';
+import oct from '../assets/newsletters/newsletterOCT2016.pdf';
+import nov from '../assets/newsletters/newsletterNOV2016.pdf';
+import dec from '../assets/newsletters/newsletterDEC2016.pdf';
 import '../styles/Newsletter.css';
 
 class NewsMenu extends React.Component {
@@ -9,37 +12,13 @@ class NewsMenu extends React.Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="newsletter">
           <div className="container">
             <div className="row">
-                <div className="three columns">
-                  <h3>Newsletters</h3>
-                  <p><Link to="/newsletter-oct2016">October 2016</Link></p>
-                  <p><Link to="/newsletter-nov2016">November 2016</Link></p>
-                  <p><Link to="/newsletter-dec2016">December 2016</Link></p>
-                </div>
-                <div className="nine columns">
-                  <div className="pdf-view">
-                    <MyPdfViewer/>
-                    {/* <Route pattern="/newsletter-oct2016" exactly render={
-                      () => <Newsletter
-                          { ...this.state }
-                      />
-                    }/> */}
-                     {/* <Route path="/newsletter-oct2016" component={Newsletter}/> */}
-                    {/* <Match pattern="/newsletter-nov2016" exactly render={
-                      () => <Newsletter
-                          { ...this.state }
-                      />
-                    }/>
-                    <Match pattern="/newsletter-dec2016" exactly render={
-                      () => <Newsletter
-                          { ...this.state }
-                      />
-                    }/> */}
-                    {/* <Miss component={ MyPdfViewer } /> */}
-                  </div>
-               </div>
+              <h3>Newsletters</h3>
+              <p className="month"><a href={oct}>October 2016</a></p>
+              <p className="month"><a href={nov}>November 2016</a></p>
+              <p className="month"><a href={dec}>December 2016</a></p>
             </div>
           </div>
         </div>
