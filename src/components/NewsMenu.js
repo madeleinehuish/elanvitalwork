@@ -16,9 +16,9 @@ class NewsMenu extends React.Component {
           <div className="container">
             <div className="row">
               <h3>Newsletters</h3>
-              <p className="month"><a href={oct}>October 2016</a></p>
-              <p className="month"><a href={nov}>November 2016</a></p>
-              <p className="month"><a href={dec}>December 2016</a></p>
+              <p className="month"><a href={oct} target="_blank">October 2016</a></p>
+              <p className="month"><a href={nov} target="_blank">November 2016</a></p>
+              <p className="month"><a href={dec} target="_blank">December 2016</a></p>
             </div>
           </div>
         </div>
