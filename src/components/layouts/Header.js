@@ -65,8 +65,8 @@ class Header extends React.Component {
             <nav className="six columns">
               <ul>
                 <div className="projectsTitle" onMouseEnter={this.handleProjectsMouseEnter} onMouseLeave={this.handleProjectsMouseLeave}>
-                  <span id="projectsTitleSpan">Projects</span>
-                  <div className={this.state.displayProjectsNav} id="projectsDiv">
+                  <Link to="/projects"><span id="projectsTitleSpan">Projects</span></Link>
+                  {/* <div className={this.state.displayProjectsNav} id="projectsDiv">
                       <ul className="projects-dropdown__quick-links projects-dropdown__segment">
                         <li className="projects-dropdown__link">
                           <Link className="projects-dropdown__link__anchor" to="/projects" name="USAAnchor" onClick={this.handleLinkClick}>
@@ -79,13 +79,13 @@ class Header extends React.Component {
                           </Link>
                         </li>
                       </ul>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="aboutTitle" onMouseEnter={this.handleAboutMouseEnter} onMouseLeave={this.handleAboutMouseLeave}>
-                  <span>About</span>
+                  <Link to="/about"><span>About</span></Link>
 
-                  <div className={this.state.displayAboutNav} id="aboutDiv">
+                  {/* <div className={this.state.displayAboutNav} id="aboutDiv">
                     <ul className="account-dropdown__quick-links account-dropdown__segment">
                       <li className="account-dropdown__link">
                         <Link className="account-dropdown__link__anchor" to="/about" name="staffAnchor" onClick={this.handleLinkClick}>
@@ -97,13 +97,9 @@ class Header extends React.Component {
                           Leadership
                         </Link>
                       </li>
-                      {/* <li className="account-dropdown__link">
-                        <Link className="account-dropdown__link__anchor" to="/about" name="advisoryAnchor" onClick={this.handleLinkClick}>
-                          Advisory Board
-                        </Link>
-                      </li> */}
+
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
                 {/* <span className="giveTitle">News</span> */}
                 <span className="giveTitle"><Link to="/newsletter">News</Link></span>
