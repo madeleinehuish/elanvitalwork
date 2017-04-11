@@ -66,24 +66,24 @@ class Main extends React.Component {
         </div>
         <div className="section second-section">
           <div className="container">
-            <h3>Projects</h3>
+            <h3>Current Projects</h3>
             <div className="row">
-              <div className="six columns">
+              <div className="twelve columns">
                 <div >
                   <Link to='/projects'>
                     <img src={projectPic1} className="profile-pictures" alt="USA projects"/>
                   </Link>
                 </div>
-                <h4>U.S.A.</h4>
+                {/* <h4>U.S.A.</h4> */}
               </div>
-              <div className="six columns">
+              {/* <div className="six columns">
                 <div>
                   <Link to='/projects'>
                     <img src={projectPic2} className="profile-pictures" alt="Africa projects"/>
                   </Link>
                 </div>
                 <h4>Africa</h4>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -63,11 +63,11 @@ class Projects extends React.Component {
         <div id="topSpacer"></div>
         <div ref="firstPic" className="background background-projects-one back">
           <div id="titleWordsProjects">
-            <h2>Projects Covering the USA and Africa</h2>
+            <h2>Current Projects</h2>
             {/* <h5>“Covering the USA and Africa”</h5> */}
           </div>
         </div>
-        <div className="section">
+        {/* <div className="section">
           <div className="container">
             <h3>Our USA Projects</h3>
             <div className="row">
@@ -77,14 +77,14 @@ class Projects extends React.Component {
                     <img src={projectPic1} className="profile-pictures" alt="USA projects"/>
                   </Link>
                 </div>
-                {/* <h4>U.S.A.</h4> */}
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <h5>test</h5>
         <div ref="secondPic" className="background  back">
         </div>
-        <div className="section second-section">
+        {/* <div className="section second-section">
           <div className="container">
             <h3>Our Africa Projects</h3>
             <a ref="africaAnchor"></a>
@@ -95,11 +95,11 @@ class Projects extends React.Component {
                     <img src={projectPic2} className="profile-pictures" alt="USA projects"/>
                   </Link>
                 </div>
-                {/* <h4>U.S.A.</h4> */}
+
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div ref="thirdPic" className="background back"></div>
       </section>
       );
