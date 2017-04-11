@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import '../styles/Main.css';
 import projectPic1 from '../assets/images/usahomeless.jpg';
-import projectPic2 from '../assets/images/africa.jpg';
+// import projectPic2 from '../assets/images/africa.jpg';
 // import { Link } from 'react-router';
 
 class Main extends React.Component {

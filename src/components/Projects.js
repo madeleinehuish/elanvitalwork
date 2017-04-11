@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
-import projectPic1 from '../assets/images/IMG_4573.JPG';
+// import projectPic1 from '../assets/images/IMG_4573.JPG';
 import projectPic2 from '../assets/images/VTCpicture.png';
 import projectPic3 from '../assets/images/SAUpicture1.png';
 import projectPic4 from '../assets/images/SAUpicture2.png';
@@ -97,20 +97,20 @@ class Projects extends React.Component {
             Multiple nonprofit organizations who address veterans have been keen to help us make this a reality. If you are interested in contributing to this project please drop us a line.</p>
         </div>
         <div className="imgDiv">
-          <img src={projectPic2}></img>
+          <img src={projectPic2} alt="VTC picture"></img>
         </div>
         <div className="offset-by-one ten columns projectTextBlock">
           <h5 className="h5BlockProjects">Stand Alone Units (SAU)</h5>
             <p className="pProjects">We have developed multiple SAU designs to fit the needs of a variety of nonprofit program providers. From women escaping sex trafficking, to homeless students,  tiny homes to temporary shelters shown below for our homeless veterans and several other sub-categories of those experiencing homelessness. We are thankful for the expertise of a few national veterans’ organizations who have helped us understand the physiological / emotional needs of those needing temporary shelters. Currently a Buddy Double prototype is under construction for review from various veterans’ organizations for their use. See images below:</p>
         </div>
         <div className="imgDiv">
-          <img src={projectPic3}></img>
+          <img src={projectPic3} alt="stand alone unit picture"></img>
         </div>
         <div className="offset-by-one ten columns projectTextBlock">
             <p className="pProjects">Shown below is the Buddy Double with its unique fold down bed in the down position and in the full upright position. Not shown is a midway positon of it being a sofa. Opposite the sofa on the center wall will be a fold down desk top. Each unit will come with a power outlet and light, lockable entry door, storage shelving and window for ventilation. Each unit is highly insulated and has a 100 year life cycle made from 100% recyclable materials. Each unit can be moved as need with a fork lift and flatbed truck. </p>
         </div>
         <div className="imgDiv">
-          <img src={projectPic4}></img>
+          <img src={projectPic4} alt="stand alone unit picture"></img>
         </div>
         <div className="offset-by-one ten columns projectTextBlock">
             <p className="pProjects">ADU SAU:
@@ -118,14 +118,14 @@ class Projects extends React.Component {
             </p>
         </div>
         <div className="imgDiv">
-          <img src={projectPic5}></img>
+          <img src={projectPic5} alt="stand alone unit picture"></img>
         </div>
         <div className="offset-by-one ten columns projectTextBlock">
           <h5 className="h5BlockProjects">Buddy Lockers</h5>
             <p className="pProjects">After talking to multiple nonprofits who provide programs to homeless individuals it has become apparent that storage lockers for belongings critically needed. For example, if a person wants to go to a job interview, what do they do with their backpack, tent, sleeping bag, etc? Typically, these things are hidden in the woods in hopes that they will not get stolen.  Every program we’ve talked to wants storage for those they serve. After consulting with several program providers we’ve come up with the design you see below:</p>
         </div>
         <div className="imgDiv">
-          <img src={projectPic6}></img>
+          <img src={projectPic6} alt="buddy locker picture"></img>
         </div>
         <div className="offset-by-one ten columns projectTextBlock">
           <h5 className="h5BlockProjects">Portable Washer/Dryer/Shower Trailer</h5>
@@ -133,10 +133,10 @@ class Projects extends React.Component {
               DJ Rabe and Eric Hogan of Covision Ministries have asked us to design new a washer/dryer trailer for their growing ministry. They currently use a box van with two washer/dryers 4-6 days each week to serve the homeless in several locations in Snohomish Co. The new trailer with have 4 washer/dryer units and 4 showers! We hope to build and get this new trailer in service by mid-year. See drawings below:</p>
         </div>
         <div className="imgDiv">
-          <img src={projectPic7}></img>
+          <img src={projectPic7} alt="portable washer picture"></img>
         </div>
         <div className="imgDiv">
-          <img src={projectPic8}></img>
+          <img src={projectPic8} alt="portable washer picture"></img>
         </div>
         {/* <div ref="secondPic" className="background  back">
         </div> */}
