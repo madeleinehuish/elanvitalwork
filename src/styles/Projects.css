@@ -9,11 +9,15 @@
   height: 44rem;
   padding: 5rem 0;
   text-align: center;
-  color: white;
+  color: #e5e5e5;
+}
+
+.backDrop {
+  background-color: #e5e5e5;
 }
 
 .background-projects-one {
-  background: url('../assets/images/IMG_4572.JPG') no-repeat center center scroll;
+  background: url('../assets/images/IMG_4573.JPG') no-repeat center center scroll;
 }
 
 .background-projects-one > h1 {
@@ -45,5 +49,25 @@
 
 .section {
   height: 30rem;
+
+}
+
+.h5BlockProjects {
+  text-align: center;
+  color: black;
+}
+
+p {
+  display: inline;
+  font-size: 1.8rem;
+}
+
+.projectTextBlock {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.imgDiv {
+  text-align:center;
 
 }

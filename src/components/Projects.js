@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
-import projectPic1 from '../assets/images/IMG_4572.JPG';
-import projectPic2 from '../assets/images/africa5.jpg';
+import projectPic1 from '../assets/images/IMG_4573.JPG';
+import projectPic2 from '../assets/images/VTCpicture.png';
+
 import '../styles/Projects.css';
 
 
@@ -59,7 +60,7 @@ class Projects extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="backDrop">
         <div id="topSpacer"></div>
         <div ref="firstPic" className="background background-projects-one back">
           <div id="titleWordsProjects">
@@ -81,9 +82,19 @@ class Projects extends React.Component {
             </div>
           </div>
         </div> */}
-        <h5>test</h5>
-        <div ref="secondPic" className="background  back">
+        <br/>
+        <div className="offset-by-one ten columns projectTextBlock">
+          <h5 className="h5BlockProjects">Veteran's Training Center</h5>
+            <p>The proposed VTC will private dorms for 41 veterans as well as provide space for programs, chapel, classrooms, laundry, bath/shower, eating area, recreation, computer room, kitchen, TV room, outdoor deck sitting area.
+            The building is designed for 7200 of manufacturing on 1st level, 864 sqft offices on 2nd level and 7200 VTC on 3rd level, plus 256 sqft of deck.
+            Mayor Barbara Tolbert has been very helpful in helping us navigate the challenges of bringing the community, including program providers together. The VTC has gained the support of the City of Arlington building department.
+            Multiple nonprofit organizations who address veterans have been keen to help us make this a reality. If you are interested in contributing to this project please drop us a line.</p>
         </div>
+        <div className="imgDiv">
+          <img src={projectPic2}></img>
+        </div>
+        {/* <div ref="secondPic" className="background  back">
+        </div> */}
         {/* <div className="section second-section">
           <div className="container">
             <h3>Our Africa Projects</h3>
