@@ -57,7 +57,7 @@
   color: black;
 }
 
-p {
+.pProjects {
   display: inline;
   font-size: 1.8rem;
 }
@@ -69,5 +69,6 @@ p {
 
 .imgDiv {
   text-align:center;
+  padding-bottom: 4rem;
 
 }
