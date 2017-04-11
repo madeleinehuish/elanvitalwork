@@ -90,7 +90,7 @@ class Projects extends React.Component {
         </div> */}
         <br/>
         <div className="offset-by-one ten columns projectTextBlock">
-          <h5 className="h5BlockProjects">Veteran's Training Center (VTC)</h5>
+          <h5 className="h5BlockProjects">Veteran Training Center (VTC)</h5>
             <p className="pProjects">The proposed VTC will private dorms for 41 veterans as well as provide space for programs, chapel, classrooms, laundry, bath/shower, eating area, recreation, computer room, kitchen, TV room, outdoor deck sitting area.
             The building is designed for 7200 of manufacturing on 1st level, 864 sqft offices on 2nd level and 7200 VTC on 3rd level, plus 256 sqft of deck.
             Mayor Barbara Tolbert has been very helpful in helping us navigate the challenges of bringing the community, including program providers together. The VTC has gained the support of the City of Arlington building department.
