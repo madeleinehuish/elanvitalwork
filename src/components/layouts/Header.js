@@ -118,7 +118,7 @@ class Header extends React.Component {
                   <RadiumLink className="menu-item" to="/">Home</RadiumLink>
                 </div>
                 <div>
-                  <RadiumLink className="menu-item" to="#">Projects</RadiumLink>
+                  <RadiumLink className="menu-item" to="/projects">Projects</RadiumLink>
                     {/* <p></p>
                       <p><RadiumLink className="menu-item" to="/">USA</RadiumLink></p>
                       <p><RadiumLink className="menu-item" to="/">Africa</RadiumLink></p> */}
@@ -126,13 +126,13 @@ class Header extends React.Component {
 
                 </div>
                 <div>
-                  <RadiumLink className="menu-item" to="/">About</RadiumLink>
+                  <RadiumLink className="menu-item" to="/about">About</RadiumLink>
                 </div>
                 <div>
-                  <RadiumLink className="menu-item" to="/">News</RadiumLink>
+                  <RadiumLink className="menu-item" to="/news">News</RadiumLink>
                 </div>
                 <div>
-                  <RadiumLink className="menu-item" to="/">Give</RadiumLink>
+                  <RadiumLink className="menu-item" to="/give">Give</RadiumLink>
                 </div>
               </Menu>
             </nav>
