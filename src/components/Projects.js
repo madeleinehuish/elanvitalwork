@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import projectPic2 from '../assets/images/VTCpicture.png';
+import projectPic2 from '../assets/images/VTCrevised.jpg';
 import projectPic3 from '../assets/images/SAUpicture1.png';
 import projectPic4 from '../assets/images/SAUpicture2.png';
 import projectPic5 from '../assets/images/SAUpicture3.png';
@@ -58,7 +58,7 @@ class Projects extends React.Component {
             Multiple nonprofit organizations who address veterans have been keen to help us make this a reality. If you are interested in contributing to this project please drop us a line.</p>
         </div>
         <div className="imgDiv">
-          <img src={projectPic2} alt="VTC"></img>
+          <img src={projectPic2} id="adjustThisPic" alt="VTC"></img>
         </div>
         <div className="offset-by-one ten columns projectTextBlock">
           <h5 className="h5BlockProjects">Stand Alone Units (SAU)</h5>

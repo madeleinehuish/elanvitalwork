@@ -1,7 +1,7 @@
 .newsletter {
-  position: absolute;
+  /*position: absolute;*/
   top: 15vh;
-  background-color: #fff;
+  background-color: #e5e5e5;
   width: 100%;
 }
 
@@ -17,4 +17,51 @@
 
 .month > a:hover {
   color: #969696;
+}
+
+#topSpacer {
+  height: 70px;
+  width: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 44rem;
+  padding: 5rem 0;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+.backDrop {
+  background-color: #e5e5e5;
+}
+
+.background-newsletter-one {
+  background: url('../assets/images/streetscene.jpg') no-repeat center center scroll;
+}
+
+.background-projects-one > h1 {
+  font-size: 6rem;
+}
+
+/*.background-projects-two {
+  background: url('../assets/images/IMG_4572.JPG') no-repeat center center scroll;
+}
+
+.background-projects-three {
+  background: url('../assets/images/africa5.jpg') no-repeat center center scroll;
+}*/
+
+.back {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  transition: opacity 0.5s ease;
+}
+
+.section {
+  height: 30rem;
+
 }
