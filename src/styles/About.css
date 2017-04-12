@@ -1,4 +1,49 @@
+.backDropAbout {
+  background-color: #e5e5e5;
+}
+
+.sectionAbout {
+  height: 170rem;
+
+}
+
 .background-about-one {
-  color: white;
-  background: url('../assets/images/africa6.jpg') no-repeat center center scroll;
+  color: #e5e5e5;
+  background: url('../assets/images/HomelessPlaque.jpg') no-repeat center center scroll;
+}
+
+.background-about {
+  width: 100%;
+  height: 44rem;
+  padding: 5rem 0;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+.h5BlockAbout {
+  margin-top: 5rem;
+  text-align: center;
+  color: black;
+}
+
+.aboutTextBlock {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.pAbout {
+  display: inline;
+  font-size: 1.8rem;
+}
+
+.marcImage {
+  width: 50%;
+  float: right;
+  margin: 1rem;
+}
+
+.darrellImage {
+  width: 30%;
+  float: right;
+  margin: 1rem;
 }

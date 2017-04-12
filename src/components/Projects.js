@@ -23,7 +23,7 @@ class Projects extends React.Component {
   scrollEvent(e) {
     const height = window.pageYOffset;
     const firstPic = ReactDOM.findDOMNode(this.refs.firstPic);
-    const secondPic = ReactDOM.findDOMNode(this.refs.secondPic);
+    // const secondPic = ReactDOM.findDOMNode(this.refs.secondPic);
     // const thirdPic = ReactDOM.findDOMNode(this.refs.thirdPic);
 
     if (height > 200 && firstPic.classList.value.indexOf('back-opacity')  < 0) {
@@ -32,31 +32,31 @@ class Projects extends React.Component {
       firstPic.classList.remove('back-opacity');
     }
 
-    if (height > 1000 && secondPic.classList.value.indexOf('back-opacity')  < 0) {
-      secondPic.classList.add('back-opacity');
-    } else if (height < 1000 && secondPic.classList.value.indexOf('back-opacity')  > 0) {
-      secondPic.classList.remove('back-opacity');
-    }
+    // if (height > 1000 && secondPic.classList.value.indexOf('back-opacity')  < 0) {
+    //   secondPic.classList.add('back-opacity');
+    // } else if (height < 1000 && secondPic.classList.value.indexOf('back-opacity')  > 0) {
+    //   secondPic.classList.remove('back-opacity');
+    // }
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.scrollEvent);
-    let anchor = this.props.anchor;
-    let node;
-
-    // if (anchor === 'USAAnchor') {
-    //
-    //   node = ReactDOM.findDOMNode(this.refs.USAAnchor);
-    //
-    // } else
-
-    if (anchor === 'africaAnchor') {
-
-      node = ReactDOM.findDOMNode(this.refs.africaAnchor);
-
-    }
-    node.scrollIntoView();
-  }
+  // componentDidMount() {
+  //   window.addEventListener('scroll', this.scrollEvent);
+  //   let anchor = this.props.anchor;
+  //   let node;
+  //
+  //   // if (anchor === 'USAAnchor') {
+  //   //
+  //   //   node = ReactDOM.findDOMNode(this.refs.USAAnchor);
+  //   //
+  //   // } else
+  //
+  //   // if (anchor === 'africaAnchor') {
+  //   //
+  //   //   node = ReactDOM.findDOMNode(this.refs.africaAnchor);
+  //   //
+  //   // }
+  //   node.scrollIntoView();
+  // }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scrollEvent);
@@ -74,20 +74,6 @@ class Projects extends React.Component {
             {/* <h5>“Covering the USA and Africa”</h5> */}
           </div>
         </div>
-        {/* <div className="section">
-          <div className="container">
-            <h3>Our USA Projects</h3>
-            <div className="row">
-              <div className="twelve columns">
-                <div >
-                  <Link to='/projects'>
-                    <img src={projectPic1} className="profile-pictures" alt="USA projects"/>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <br/>
         <div className="offset-by-one ten columns projectTextBlock">
           <h5 className="h5BlockProjects">Veteran Training Center (VTC)</h5>

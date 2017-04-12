@@ -49,16 +49,16 @@ class Main extends React.Component {
             <h5>“Serving those experiencing homelessness”</h5>
           </div>
         </div>
-        <div className="section">
+        <div className="first-section">
           <div className="container">
             <div className="row">
             <h3>Our Mission</h3>
               <h5 id="mission-statement" className="u-width-full-length">"To demonstrate Christ’s love to people experiencing homelessness through the provision of transitional housing, education and job training."</h5>
-              <p className="extMission-statement">
+              <h5 className="extMission-statement">
                 Our focus is housing. We offer unique housing solutions teaming with nonprofits who
                 offer programs to provide the homeless with comprehensive care, counseling and training.
                 Our goal is to see self-reliant individuals exiting the programs offered.
-              </p>
+              </h5>
             </div>
           </div>
         </div>

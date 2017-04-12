@@ -43,17 +43,18 @@
   transition: opacity 1s ease;
 }
 
-.section {
+.first-section {
   height: 25rem;
   padding: 2.5rem 0;
   color: #222;
   text-align: center;
   background-color: #e5e0e0;
-
 }
 
 .second-section {
   height: 32rem;
+  text-align: center;
+  background-color: #e5e0e0;
 }
 
 .profile-pictures {
@@ -101,18 +102,23 @@
     font-size: 5rem;
   }
 
-  .section {
+  .first-section {
     height: 40rem;
-    padding: 2.5rem 0;
+    padding: 2.2rem 0;
     color: #222;
     text-align: center;
     background-color: #e5e0e0;
-
   }
 
   .second-section {
     height: 80rem;
+    text-align: center;
+    background-color: #e5e0e0;
   }
+
+  /*.background-three {
+    height: 4rem;
+  }*/
 
   .back {
     background-attachment: scroll;
