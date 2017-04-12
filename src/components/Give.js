@@ -1,22 +1,19 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import '../styles/Give.css';
 
 
-class Give extends React.Component {
+const Give = (props) => {
 
-  render() {
-    return (
-      <section>
+  return (
+    <section>
+      <div>
+        <h3>Give</h3>
         <div>
-          <h3>Give</h3>
-          <div>
-            test
-          </div>
+          test
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
 
 }
 

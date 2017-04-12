@@ -31,28 +31,8 @@ class About extends React.Component {
     }
   }
 
-  // componentDidMount() {
-  //   window.addEventListener('scroll', this.scrollEvent);
-  //   let anchor = this.props.anchor;
-  //   let node;
-  //
-  //   // if (anchor === 'USAAnchor') {
-  //   //
-  //   //   node = ReactDOM.findDOMNode(this.refs.USAAnchor);
-  //   //
-  //   // } else
-  //
-  //   // if (anchor === 'africaAnchor') {
-  //   //
-  //   //   node = ReactDOM.findDOMNode(this.refs.africaAnchor);
-  //   //
-  //   // }
-  //   node.scrollIntoView();
-  // }
-  //
   componentDidMount() {
     window.addEventListener('scroll', this.scrollEvent);
-    // let anchor = this.props.anchor;
     let node = ReactDOM.findDOMNode(this.refs.theAboutAnchor);
 
     node.scrollIntoView();

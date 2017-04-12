@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import '../styles/Main.css';
 import projectPic1 from '../assets/images/usahomeless.jpg';
-// import projectPic2 from '../assets/images/africa.jpg';
-// import { Link } from 'react-router';
 
-class Main extends React.Component {
+class Main extends Component {
   constructor() {
     super();
     this.scrollEvent = this.scrollEvent.bind(this);
@@ -33,7 +31,6 @@ class Main extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.scrollEvent);
-    // let anchor = this.props.anchor;
     let node = ReactDOM.findDOMNode(this.refs.theMainAnchor);
 
     node.scrollIntoView();
@@ -78,16 +75,7 @@ class Main extends React.Component {
                     <img src={projectPic1} className="profile-pictures" alt="USA projects"/>
                   </Link>
                 </div>
-                {/* <h4>U.S.A.</h4> */}
               </div>
-              {/* <div className="six columns">
-                <div>
-                  <Link to='/projects'>
-                    <img src={projectPic2} className="profile-pictures" alt="Africa projects"/>
-                  </Link>
-                </div>
-                <h4>Africa</h4>
-              </div> */}
             </div>
           </div>
         </div>

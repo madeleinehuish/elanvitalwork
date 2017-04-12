@@ -4,6 +4,7 @@ import '../styles/MyPdfViewer.css';
 import octoberNewsletter from '../assets/newsletters/newsletterOCT2016.pdf';
 
 class MyPdfViewer extends React.Component {
+
   constructor(props) {
     super(props);
     this.onDocumentComplete = this.onDocumentComplete.bind(this);
