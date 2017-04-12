@@ -77,7 +77,7 @@ class About extends React.Component {
                 nonprofit organization in the State of Washington.</p>
             </div>
             <div className="twelve columns aboutTextBlock">
-              <h5 className="h5BlockAbout">Robert Marc Fulmer CEO</h5>
+              <h5 className="h5BlockAbout">Robert Marc Fulmer - CEO</h5>
               <div className="container">
                 <div className="row">
                   <div className="twelve columns">
@@ -90,7 +90,7 @@ class About extends React.Component {
               </div>
             </div>
             <div className="twelve columns aboutTextBlock">
-              <h5 className="h5BlockAbout">Marc Fulmer CEO</h5>
+              <h5 className="h5BlockAbout">Darrel Potter - Board Chair</h5>
               <div className="container">
                 <div className="row">
                   <div className="twelve columns">
