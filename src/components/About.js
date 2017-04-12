@@ -52,7 +52,7 @@ class About extends React.Component {
   //
   componentDidMount() {
     window.addEventListener('scroll', this.scrollEvent);
-    let anchor = this.props.anchor;
+    // let anchor = this.props.anchor;
     let node = ReactDOM.findDOMNode(this.refs.theAboutAnchor);
 
     node.scrollIntoView();
