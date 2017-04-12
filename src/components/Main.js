@@ -33,6 +33,10 @@ class Main extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.scrollEvent);
+    let anchor = this.props.anchor;
+    let node = ReactDOM.findDOMNode(this.refs.theMainAnchor);
+
+    node.scrollIntoView();
   }
 
   componentWillUnmount() {
@@ -41,7 +45,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <section>
+      <section ref="theMainAnchor">
         <div id="topSpacer"></div>
         <div ref="firstPic" className="background background-one back">
           <div id="titleWords">

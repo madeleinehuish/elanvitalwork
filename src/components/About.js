@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import projectPic1 from '../assets/images/HomelessPlaque.jpg';
-// import projectPic2 from '../assets/images/africa5.jpg';
 import projectPic3 from '../assets/images/profile1.jpg';
 import projectPic4 from '../assets/images/profile2.jpg';
 import '../styles/About.css';
@@ -52,15 +50,23 @@ class About extends React.Component {
   //   node.scrollIntoView();
   // }
   //
-  // componentWillUnmount() {
-  //   window.removeEventListener('scroll', this.scrollEvent);
-  // }
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollEvent);
+    let anchor = this.props.anchor;
+    let node = ReactDOM.findDOMNode(this.refs.theAboutAnchor);
+
+    node.scrollIntoView();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollEvent);
+  }
 
 
 
   render() {
     return (
-      <section className="backDropAbout">
+      <section className="backDropAbout" ref="theAboutAnchor">
         <div id="topSpacer"></div>
         <div ref="firstPic" className="background-about background-about-one back">
           <div id="titleWordsProjects">
