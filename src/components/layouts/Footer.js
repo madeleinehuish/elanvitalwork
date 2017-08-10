@@ -32,10 +32,10 @@ class Footer extends React.Component {
               <div className="right">
                 <h5 id="footerTopText">Contact Us</h5>
                 <p>Elan Vital Solutions</p>
-                <p>18503 Teeside Lane</p>
-                <p>Arlington, WA 98223-5088, USA</p>
+                <p>2203 172nd Street NE, Suite 201</p>
+                <p>Marysville, WA 98271 USA</p>
                 <p>Tel: +1 (206) 353-2328</p>
-                <p>Email: marc@elanvitalsolutions.org</p>
+                <p>Email: mainstreamdarrel@aol.com</p>
               </div>
             </div>
           </div>
